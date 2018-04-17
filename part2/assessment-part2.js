@@ -111,7 +111,7 @@ const deathStar = (capacity, crew) => {
 // The closure function will return the combined value of assets and liabilities.
 
 // CODE HERE...
-
+function accountingOffice(assets)
 
 
 // *************
