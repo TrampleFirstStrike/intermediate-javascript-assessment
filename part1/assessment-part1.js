@@ -85,12 +85,12 @@ var fairyTale5 = ["daBears", "papaBear", "mamaBear", "babyBear"];
 
 
 const Vehicle = function() {
-  this.gasRemianing = 100;
+  this.gasRemaining = 100;
 
 };
 
 Vehicle.prototype.drive = function() {
-  return (this.gasRemianing -= 25);
+  return (this.gasRemaining -= 25);
 
 };
 
@@ -124,12 +124,12 @@ mustang.drive();
 
 
 // CODE HERE...
-string.prototype.grammarPolice = function() {
-  let firsts = this.split('').map(curr => {
+String.prototype.grammarPolice = function() {
+  let firsts = this.split(' ').map(curr => {
     return curr[0].toUpperCase() + curr.substring(1).toLowerCase();
 
   });
-  return firsts.join('');
+  return firsts.join(' ');
 }
 
 
