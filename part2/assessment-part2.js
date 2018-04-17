@@ -44,7 +44,14 @@ function noWeakLink() {
     url: '/api/users'
   })
   // CODE HERE...
-
+.then(response => {
+  firstUser = response.data[0];
+  return response;
+})
+.then(response => {
+  thirdUser = response.data[2];
+  return response.data[9];
+})
 }
 
 
@@ -74,7 +81,7 @@ function large() {
   return 'My name is ' + this.name + ' and I am very heavy!'
 }
 // CODE HERE...
-
+let boundToElephant = large.bind(elephant);
 
 
 // *************
@@ -88,8 +95,9 @@ function large() {
 // and return the bound function.
 
 // CODE HERE...
-
-
+const deathStar = (capacity, crew) => {
+  return capacity.bind(crew);
+};
 
 // *************
 // * PROBLEM 4 *
